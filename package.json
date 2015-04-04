@@ -4,7 +4,7 @@
   "description": "React component for textarea autosize",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./node_modules/.bin/gulp server"
   },
   "keywords": [
     "react-component",
@@ -14,5 +14,19 @@
     "autoresize"
   ],
   "author": "Kiran Abburi",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer-core": "^5.1.8",
+    "babel": "^5.0.8",
+    "babel-core": "^5.0.8",
+    "babel-loader": "^5.0.0",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "lodash.assign": "^3.0.0",
+    "webpack": "^1.7.3",
+    "webpack-dev-server": "^1.8.0"
+  },
+  "dependencies": {
+    "react": "^0.13.1"
+  }
 }
