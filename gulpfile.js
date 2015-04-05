@@ -4,6 +4,8 @@ var del = require('del');
 var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
 var assign = require('lodash.assign');
+var reactify = require('gulp-reactify')
+var reactTools = require('react-tools');
 
 gulp.task('clean', function () {
   return del(['./build/*']);
@@ -44,4 +46,10 @@ gulp.task('server', ['copy'], function (callback) {
     debug: true
   }).listen(8000, process.env.HOST_IP || 'localhost', function (err, result) {
   });
+});
+
+gulp.task('jsx', function() {
+  gulp.src('*.jsx')
+    .pipe(reactify({reactTools: reactTools}))
+    .pipe(gulp.dest('.'));
 });

@@ -13,7 +13,8 @@ var TextareaDemo = React.createClass({
   render: function () {
     return (
       <Textarea>
-        When you enter more text in this textarea, it height increases automatically instead of showing a scrollbar. 
+        When you enter more text in this textarea,
+        its height increases automatically instead of showing a scrollbar. 
       </Textarea>
     );
   }

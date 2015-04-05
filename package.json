@@ -1,10 +1,11 @@
 {
-  "name": "react-textarea-autosize",
+  "name": "react-autosize",
   "version": "0.1.0",
-  "description": "React component for textarea autosize",
+  "description": "React component to adjust textarea height automatically to fit text",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/gulp server"
+    "start": "./node_modules/.bin/gulp server",
+    "prepublish": "gulp jsx"
   },
   "keywords": [
     "react-component",
@@ -22,6 +23,8 @@
     "babel-loader": "^5.0.0",
     "del": "^1.1.1",
     "gulp": "^3.8.11",
+    "gulp-reactify": "^2.0.0",
+    "react-tools": "^0.13.1",
     "webpack": "^1.7.3",
     "webpack-dev-server": "^1.8.0"
   },
