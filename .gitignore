@@ -2,6 +2,4 @@ node_modules
 bower_components
 .sass-cache
 build
-demos/*
-demos1
-TODO.md
+index.js
