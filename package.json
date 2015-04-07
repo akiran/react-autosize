@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/gulp server",
+    "test": "jest",
     "prepublish": "gulp jsx"
   },
   "keywords": [
@@ -34,5 +35,10 @@
   },
   "dependencies": {
     "autosize": "^2.0.0"
+  },
+  "jest": {
+    "moduleFileExtensions": ["js", "jsx", "json"],
+    "scriptPreprocessor": "./preprocessor.js",
+    "unmockedModulePathPatterns": ["./node_modules/react"]
   }
 }
