@@ -15,5 +15,13 @@
   "newcap": true,
   "noarg": true,
   "undef": true,
-  "unused": true
+  "unused": true,
+   "predef": [
+    "describe",
+    "beforeEach",
+    "it",
+    "jest",
+    "pit",
+    "expect"
+  ]
 }
